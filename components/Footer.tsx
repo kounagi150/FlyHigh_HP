@@ -11,7 +11,7 @@ export default function Footer() {
       color: 'from-blue-500 to-blue-600'
     },
     {
-      title: '主催者X',
+      title: '主催：釜塚ABふらいX',
       handle: '@ABFly_Kamazuka',
       url: 'https://twitter.com/ABFly_Kamazuka',
       icon: Twitter,
