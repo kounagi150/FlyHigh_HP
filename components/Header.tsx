@@ -23,7 +23,6 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-lg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex justify-between items-center h-16 sm:h-20">
         <div className="flex items-center gap-2 sm:gap-3">
-          {/* Logo Image A */}
           <Image
             src="/FHlogoTouka.png"
             alt="Fly High!! ロゴ"
@@ -31,12 +30,11 @@ export default function Header() {
             height={40}
             className="rounded-lg shadow-md"
           />
-          {/* Text Image B */}
           <Image
             src="/FHTxt_touka.png"
             alt="Fly High!!"
-            width={120}
-            height={30}
+            width={100}
+            height={24}
             className="h-auto w-auto"
           />
         </div>
