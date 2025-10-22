@@ -4,7 +4,7 @@ export default function Gallery() {
   const galleryItems = [
     { 
       id: 1, 
-      src: '/venue.jpeg',
+      src: '/venue.jpg',
       title: '会場の熱気', 
       description: '会場の雰囲気',
       category: 'VENUE'
