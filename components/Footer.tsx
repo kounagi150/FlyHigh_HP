@@ -38,8 +38,8 @@ export default function Footer() {
       
       <div className="relative z-10 py-32">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight font-mono">
+          <div className="text-center mb-12 sm:mb-20">
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-black mb-6 sm:mb-8 tracking-tight font-mono">
               <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 LINKS
               </span>
@@ -50,7 +50,7 @@ export default function Footer() {
             <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mt-8"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
             {links.map((link, index) => {
               const IconComponent = link.icon;
               return (
@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
           
           {/* 追加セクション */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 sm:mb-16">
             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-12 rounded-3xl shadow-2xl max-w-4xl mx-auto">
               <h3 className="text-3xl font-bold mb-4 text-white">
                 次回大会への参加について
@@ -106,7 +106,7 @@ export default function Footer() {
           </div>
           
           <div className="border-t border-gray-800 pt-12">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="text-center md:text-left">
                 <p className="text-gray-400 mb-2">
                   © 2025 Fly High!!  All rights reserved.

@@ -54,9 +54,9 @@ export default function Gallery() {
         <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-orange-400/5 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight font-mono">
+  <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-20">
+          <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-white mb-6 sm:mb-8 tracking-tight font-mono">
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
               GALLERY
             </span>
@@ -67,7 +67,7 @@ export default function Gallery() {
           <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mt-8"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {galleryItems.map((item, index) => (
             <div
               key={item.id}

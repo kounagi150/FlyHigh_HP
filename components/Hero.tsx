@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="h-screen relative flex flex-col justify-center items-center text-white overflow-hidden">
+    <section className="min-h-[70vh] md:min-h-screen relative flex flex-col justify-center items-center text-white overflow-hidden">
       {/* 背景画像 */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -16,13 +16,13 @@ export default function Hero() {
       </div>
       
       {/* メインロゴエリア */}
-      <div className="relative z-20 text-center max-w-4xl mx-auto px-4">
-        <div className="mb-8">
+      <div className="relative z-20 text-center max-w-3xl mx-auto px-4">
+        <div className="mb-6">
           <Image
             src="/logo.png"
             alt="Fly High!! ロゴ"
-            width={500}
-            height={250}
+            width={360}
+            height={180}
             className="mx-auto filter drop-shadow-2xl"
             priority
           />
@@ -36,7 +36,7 @@ export default function Hero() {
         </div>
         
         <div className="space-y-2">
-          <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-3 rounded-full font-bold text-base hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl transform hover:scale-105">
+          <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2.5 sm:px-10 sm:py-3 rounded-full font-bold text-sm sm:text-base hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl transform hover:scale-105">
             <span className="flex items-center justify-center gap-2">
               大会にエントリー
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

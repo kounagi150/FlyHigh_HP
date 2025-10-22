@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <section id="about" className="py-32 bg-white">
-      <div className="mx-auto max-w-4xl px-6 text-center">
-        <div className="mb-16">
-          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">
+    <section id="about" className="py-20 sm:py-32 bg-white">
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 text-center">
+        <div className="mb-12">
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-gray-900 mb-6 tracking-tight">
             ABOUT
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full"></div>

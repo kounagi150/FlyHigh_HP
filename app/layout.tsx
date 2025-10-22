@@ -32,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className="scroll-smooth">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+      </head>
       <body
         className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
