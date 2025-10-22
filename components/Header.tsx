@@ -22,19 +22,23 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-lg">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex justify-between items-center h-16 sm:h-20">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          {/* Logo Image A */}
           <Image
-            src="/logo.png"
+            src="/FHlogoTouka.png"
             alt="Fly High!! ロゴ"
             width={40}
             height={40}
             className="rounded-lg shadow-md"
           />
-          <h1 className="text-lg sm:text-2xl font-black text-gray-900 tracking-wide font-mono">
-            <span className="bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
-              FLY HIGH!!
-            </span>
-          </h1>
+          {/* Text Image B */}
+          <Image
+            src="/FHTxt_touka.png"
+            alt="Fly High!!"
+            width={120}
+            height={30}
+            className="h-auto w-auto"
+          />
         </div>
 
         {/* Desktop nav */}
