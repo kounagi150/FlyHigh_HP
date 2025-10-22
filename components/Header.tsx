@@ -24,17 +24,10 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex justify-between items-center h-16 sm:h-20">
         <div className="flex items-center gap-2 sm:gap-3">
           <Image
-            src="/FHlogoTouka.png"
-            alt="Fly High!! ロゴ"
-            width={40}
-            height={40}
-            className="rounded-lg shadow-md"
-          />
-          <Image
             src="/FHTxt_touka.png"
             alt="Fly High!!"
-            width={100}
-            height={24}
+            width={120}
+            height={28}
             className="h-auto w-auto"
           />
         </div>
