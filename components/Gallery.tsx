@@ -62,7 +62,7 @@ export default function Gallery() {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            大会の様子をご覧ください
+            大会やイベントの様子
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mt-8"></div>
         </div>

@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="space-y-2">
           <button className="group bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2.5 sm:px-10 sm:py-3 rounded-full font-bold text-sm sm:text-base hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-xl transform hover:scale-105">
             <span className="flex items-center justify-center gap-2">
-              大会にエントリー
+              エントリーはこちら
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
