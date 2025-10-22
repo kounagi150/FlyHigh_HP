@@ -11,11 +11,11 @@ export default function Footer() {
       color: 'from-blue-500 to-blue-600'
     },
     {
-      title: '主催：釜塚ABふらいX',
+      title: '釜塚ABふらい',
       handle: '@ABFly_Kamazuka',
       url: 'https://twitter.com/ABFly_Kamazuka',
       icon: Twitter,
-      description: '大会運営者',
+      description: '主催者',
       color: 'from-purple-500 to-purple-600'
     },
     {
