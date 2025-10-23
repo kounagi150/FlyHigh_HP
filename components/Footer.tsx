@@ -22,12 +22,12 @@ return(
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
 {a.map((b,c)=>{
-const d=b.icon;
+const Icon=b.icon;
 return(
 <a key={c} href={b.url} target="_blank" rel="noopener noreferrer" className="group relative bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-orange-500/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10">
 <div className="flex justify-between items-start mb-6">
 <div className={`p-4 rounded-2xl bg-gradient-to-r ${b.color} shadow-lg`}>
-<d className="w-8 h-8 text-white"/>
+<Icon className="w-8 h-8 text-white" />
 </div>
 <ArrowUpRight className="w-5 h-5 text-gray-500 group-hover:text-orange-400 transition-colors"/>
 </div>
