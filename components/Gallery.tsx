@@ -1,11 +1,10 @@
 import Image from 'next/image';
 
 export default function Gallery() {
-  // ギャラリー画像データ
   const galleryItems = [
     { 
       id: 1, 
-      src: '/venue.jpeg',
+      src: '/venue.jpg',
       title: '会場の熱気', 
       description: '大会会場の雰囲気',
       category: 'VENUE'
@@ -49,14 +48,12 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="py-32 bg-gray-900 relative overflow-hidden">
-      {/* 背景装飾 */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-10 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-orange-400/5 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative z-10 mx-auto max-w-7xl px-6">
-        {/* セクションヘッダー */}
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight font-mono">
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
@@ -69,7 +66,6 @@ export default function Gallery() {
           <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mt-8"></div>
         </div>
         
-        {/* ギャラリーグリッド */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryItems.map((item, index) => (
             <div
@@ -78,7 +74,6 @@ export default function Gallery() {
                 index === 0 || index === 3 ? 'md:col-span-1 lg:col-span-2' : ''
               }`}
             >
-              {/* 画像コンテナ */}
               <div className={`relative ${
                 index === 0 || index === 3 ? 'aspect-[16/10]' : 'aspect-[4/5]'
               } overflow-hidden`}>
@@ -90,7 +85,6 @@ export default function Gallery() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent group-hover:from-black/60 transition-all duration-500"></div>
                 
-                {/* カテゴリータグ */}
                 <div className="absolute top-4 left-4">
                   <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider">
                     {item.category}
@@ -98,7 +92,6 @@ export default function Gallery() {
                 </div>
               </div>
               
-              {/* 画像情報オーバーレイ */}
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                 <h3 className="text-xl font-bold mb-2 text-orange-200">
                   {item.title}
@@ -108,13 +101,11 @@ export default function Gallery() {
                 </p>
               </div>
               
-              {/* ホバー時のボーダー */}
               <div className="absolute inset-0 border-2 border-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
             </div>
           ))}
         </div>
         
-        {/* フッターテキスト */}
         <div className="text-center mt-16">
           <p className="text-gray-400 text-lg italic">
             詳細は公式SNSで随時更新中

@@ -1,4 +1,5 @@
 import { Trophy, ArrowUpRight } from 'lucide-react';
+import Image from 'next/image';
 
 // Xアイコン（旧Twitter）のSVGコンポーネント
 const XIcon = ({ className }: { className: string }) => (
@@ -37,26 +38,24 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="links" className="relative bg-black text-white overflow-hidden">
+    <footer id="links" className="relative bg-gray-100 text-gray-900 overflow-hidden">
       {/* 背景装飾 */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-orange-400/3 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-1/4 w-96 h-96 bg-orange-200/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-orange-100/20 rounded-full blur-3xl"></div>
       </div>
       
       <div className="relative z-10 py-32">
         <div className="mx-auto max-w-7xl px-6">
           {/* セクションヘッダー */}
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tight font-mono">
-              <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                LINKS
-              </span>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight font-mono text-orange-500 mb-8">
+              LINKS
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
               公式SNSで最新情報をチェック、エントリーはstart.ggから
             </p>
-            <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto rounded-full mt-8"></div>
+            <div className="w-32 h-2 bg-orange-500 mx-auto mt-8"></div>
           </div>
           
           {/* ソーシャルリンクグリッド */}
@@ -69,49 +68,49 @@ export default function Footer() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-3xl border border-gray-700 hover:border-orange-500/50 transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/10"
+                  className="group relative bg-white p-8 border-2 border-gray-200 hover:border-orange-500 transition-all duration-300"
                 >
                   {/* アイコンとリンク表示 */}
                   <div className="flex justify-between items-start mb-6">
-                    <div className={`p-4 rounded-2xl bg-gradient-to-r ${link.color} shadow-lg`}>
+                    <div className={`p-4 bg-gradient-to-r ${link.color} border-2 border-gray-400`}>
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-gray-500 group-hover:text-orange-400 transition-colors" />
+                    <ArrowUpRight className="w-5 h-5 text-gray-500 group-hover:text-orange-500 transition-colors" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-orange-400 transition-colors">
+                  <h3 className="text-2xl font-bold mb-3 text-gray-900">
                     {link.title}
                   </h3>
-                  <p className="text-orange-400 font-mono font-semibold mb-3 text-lg">
+                  <p className="text-orange-600 font-mono font-semibold mb-3 text-lg">
                     {link.handle}
                   </p>
-                  <p className="text-gray-400 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed">
                     {link.description}
                   </p>
-                  
-                  {/* ホバーエフェクト */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-orange-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 </a>
               );
             })}
           </div>
           
           {/* フッター情報 */}
-          <div className="border-t border-gray-800 pt-12">
+          <div className="pt-12">
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="text-center md:text-left">
-                <p className="text-gray-400 mb-2">
+                <p className="text-gray-700 mb-2 font-semibold">
                   © 2025 Fly High!!  All rights reserved.
                 </p>
+                <p className="text-sm text-gray-600">プレイヤー中心の大会運営</p>
               </div>
               
               <div className="text-center md:text-right">
-                <p className="text-4xl font-black font-mono tracking-wider">
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                    FLY HIGH!!
-                  </span>
-                </p>
-                <p className="text-gray-400 text-sm mt-2">
+                <Image
+                  src="/FHTxt_touka.png"
+                  alt="Fly High!! ロゴ"
+                  width={180}
+                  height={50}
+                  className="mx-auto"
+                />
+                <p className="text-gray-700 text-sm mt-4 font-semibold">
                   次回開催: 2025年11月予定
                 </p>
               </div>
