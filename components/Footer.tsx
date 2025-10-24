@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="absolute bottom-10 right-1/4 w-80 h-80 bg-orange-100/20 rounded-full blur-3xl"></div>
       </div>
       
-      <div className="relative z-10 py-32">
+      <div className="relative z-10 py-16 pb-0">
         <div className="mx-auto max-w-7xl px-6">
           {/* セクションヘッダー */}
           <div className="text-center mb-20">
@@ -93,13 +93,12 @@ export default function Footer() {
           </div>
           
           {/* フッター情報 */}
-          <div className="pt-12">
+          <div className="pt-20 pb-16">
             <div className="flex flex-col md:flex-row justify-between items-center gap-8">
               <div className="text-center md:text-left">
                 <p className="text-gray-700 mb-2 font-semibold">
                   © 2025 Fly High!!  All rights reserved.
                 </p>
-                <p className="text-sm text-gray-600">プレイヤー中心の大会運営</p>
               </div>
               
               <div className="text-center md:text-right">
@@ -108,11 +107,8 @@ export default function Footer() {
                   alt="Fly High!! ロゴ"
                   width={180}
                   height={50}
-                  className="mx-auto"
+                  className="mx-auto mt-12"
                 />
-                <p className="text-gray-700 text-sm mt-4 font-semibold">
-                  次回開催: 2025年11月予定
-                </p>
               </div>
             </div>
           </div>
